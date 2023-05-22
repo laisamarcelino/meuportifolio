@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* paleta do site: bfc3ba 001021 034748 f2befc 71697a */
+
+
+body{
+    color: #001021;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    background-color: #bfc3ba;
+}
+
+nav{
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    color: #bfc3ba;
+}
+
+.menu{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 450px;
+    color: #001021;
+}
+
+.menu:hover{
+    color: #71697A;  
+    transform: scale(1.2);
+}
+
+.sobre_mim{
+    border: solid 1px #71697A;
+    padding: 50px;
+    margin: 50px 15% 30px 15%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #bfc3ba;
+}
+
+.alinhamento_sobre{
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+}
+
+h1{
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+
+.redes_sociais{
+    margin-top: 20%;
+    font-size: 18px;
+}
+
+.icon{
+    margin: 10px;
+}
+
+.img_icon{
+    height: 20px;
+}
+
+.img_icon:hover{ 
+    transform: scale(1.5);
+}
+
+.imagem_eu{
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+    display: flex;
+    justify-content: end;
+    box-shadow: 10px 10px 5px #034748;
+    border-radius: 10px;
+}
+
+.imagem_eu_tela_pequena{
+    display: none;
+}
+
+.interesses{
+    margin: 50px 15% 50px 15%;
+    border: solid 1px #71697A;
+    padding: 50px;
+    font-size: 15px;
+    
+}
+
+.alinhamento_interesses{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 5%;
+}
+
+#subtitulo1{
+   margin-right: 20%;
+} 
+
+.img_interesses{
+    height: 180px;
+    width: 180px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#galeria{
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao_img{
+    position: absolute; /*posiciona o elemento com base na posição da class img*/
+    height: 180px;
+    width: 180px;
+    opacity: 0;
+    transition: .5s ease-in; /*ease realiza uma transição com inicio lento*/
+    background-color: #71697A;
+    top: 0; /* top, bottom, left e right definem a borda do elemento posicionado*/
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #bfc3ba;
+    padding: 20px;
+}
+/* Realiza a transição para a descrição da imagem*/
+
+.img{
+    position: relative; /*o elemento foi posicionado em relação a sua posição normal*/
+}
+
+.img:hover .descricao_img{
+    opacity: 1;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+    margin: 40px 15% 100px 15%;
+    border: solid 1px #71697A;
+    padding: 50px;
+    background-color: #bfc3ba;
+
+}
+
+form{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid #001021;
+    box-sizing: content-box;
+    background-color: #bfc3ba;
+    width: 400px;
+    font-size: 16px;
+    padding: 10px;
+   
+}
+/* Faz com que a caixa do formulário tenha apenas a borda inferior */
+
+textarea{
+    width: 420px;
+    height: 100px;
+    padding: 10px 20px;
+    border: 2px solid #001021;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #bfc3ba;
+    font-family: 'Lato', sans-serif;
+}
+
+#botao_enviar{
+    background-color: #71697A;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 60px;
+}
+
+#botao_enviar:hover{ 
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: #001021;
+    display: block;
+    margin: 0%;
+    padding: 40px;
+    color: #bfc3ba;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 480px) {
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .menu:hover{
+        background-color: #034748;
+        color:#bfc3ba
+    }
+    .sobre_mim{
+        margin: 10px 15% 10px 15%;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .alinhamento_sobre{
+        padding-right: 0%; /* "Limpa" a formatação anterior para centralizar o texto */
+    }
+
+    .redes_sociais{
+        margin: 25px auto; /*centraliza a classe*/
+    }
+
+    .imagem_eu_tela_pequena{
+        width: 200px;
+        height: 200px;
+        object-fit: contain; /*Mantem as proporçoes da imagem*/
+        margin: auto; /*centraliza a classe*/
+        display: flex;
+        box-shadow: 10px 10px 5px #034748;
+        border-radius: 10px;
+        margin: 10px auto 25px auto;
+    }
+    
+    .imagem_eu{
+        display: none;
+    }
+
+    .interesses{
+        margin: 10px 15% 10px 15%;
+        display: flex;
+        flex-direction: column;
+        padding: 25px
+    }
+
+    #subtitulo1{
+        margin-bottom: 20px;
+    }
+
+    .alinhamento_interesses{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;   
+    }
+
+    #galeria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img_interesses{
+        margin-bottom: 10px;
+    }
+
+    #subtitulo2{
+        font-size: large;
+    }
+
+    input{
+        width: 200px;       
+    }
+    /* Diminui a largura do formulário*/
+    
+    textarea{
+        width: 220px;
+    }
+    
+}
+
+@media screen and (max-width: 1025px) and (min-width: 481px){    
+    .imagem_eu_tela_pequena{
+        width: 250px;
+        height: 250px;
+        object-fit: contain; /*Mantem as proporçoes da imagem*/
+        margin: auto; /*centraliza a classe*/
+        display: flex;
+        box-shadow: 10px 10px 5px #034748;
+        border-radius: 10px;
+        margin: 10px auto 25px auto;
+    }
+    
+    .imagem_eu{
+        display: none;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .alinhamento_sobre{
+        padding-right: 0%; /* "Limpa" a formatação anterior para centralizar o texto */
+    }
+
+    .redes_sociais{
+        margin: 25px auto; /*centraliza a classe*/
+    }
+
+    #galeria{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img_interesses{
+        margin-bottom: 15px;
+    }
+
+    .img{
+        display: flex;
+        justify-content: center;
+    }
+    .descricao_img{
+        display: flex;
+        justify-content: center;
+    }
+}

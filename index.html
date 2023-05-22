@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imagem/icone_head.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portifólio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="menu" href="#secao1"><strong>SOBRE MIM</strong></a>
+            <a class="menu" href="#secao2"><strong>INTERESSES E HOBBIES</strong></a>
+            <a class="menu" href="#secao3"><strong>ENTRE EM CONTATO</strong></a>
+        </nav>
+    </header>
+    <main>
+        <section class="sobre_mim" id="secao1"> 
+            <div class="alinhamento_sobre">
+                <h1>Laisa Marcelino</h1>
+                <img class="imagem_eu_tela_pequena" src="./imagem/eu.jpg" alt="imagem de fundo azul, com uma mulher cabelos cacheados ao centro, utilizando uma camiseta branca. ">
+                <p>Olá! Me chamo Laisa, tenho 20 anos e nasci e cresci em Janaúba-MG. Atualmente moro em Curitiba-PR e curso Engenharia de Bioprocessos e Biotecnologia na Universidade Federal 
+                    do Paraná. Com 18 anos me formei como Técnica em Informática para Internet, no IFNMG-Campus Janaúba, mas decidi sair da área tech para explorar o mundo da Biotecnologia. Após 2 anos de graduação
+                    percebi que não me identificava com a área e retornei ao mundo da Informática por meio de um curso focado em Desenvolvimento Web Full Stack oferecido pela EBANX em parceria com a Resília Educação, bem como
+                    por meio da mudança de graduação para um Bacharelado em Ciência da Computação. De modo geral, sou uma pessoa muito focada nos meus objetivos, cujo maior deles é ser feliz em minha profissão. 
+
+                </p>
+
+                <div class="redes_sociais">
+                    <p style="padding-bottom: 2%;"><strong>@laisa_marcelino</strong></p>
+                    <a class="icon" href="https://www.instagram.com"><img class="img_icon" src="./imagem/instagram.png" alt="ícone link para o instagram"></a>
+                    <a class="icon" href="https://github.com/laisamarcelino/"><img class="img_icon" src="./imagem/github.png" alt="ícone link para o GitHub"></a>
+                    <a class="icon" href="https://www.linkedin.com/in/laisa-marcelino-82a324203/"><img class="img_icon" src="./imagem/linkedin.png" alt="Ícone link para o linkedln"></a>
+                </div>
+            </div>
+            <img class="imagem_eu" src="./imagem/eu.jpg" alt="imagem de fundo azul, com uma mulher cabelos cacheados ao centro, utilizando uma camiseta branca. ">
+        <!-- A div class="alinhamento_sobre" foi colocada para o h1 e o p fossem alinhados à esqueda e a imagem à direita -->
+        </section>
+
+        <section class="interesses" id="secao2">
+            <div class="alinhamento_interesses"> 
+                <h2 id="subtitulo1">Interesses e Hobbies</h2>
+                <p>Profissionalmente me interesso pela área de desenolvimento de software, a programação back-end é minha paixão. Mas, para além disso, 
+                    nas horas de lazer gosto de estar com meus amigos e família para viajar, conversar ou praticar meu esporte favorito. 
+                </p>
+            </div>
+            <div id="galeria">
+                <div class="img">
+                    <img class="img_interesses" src="./imagem/interesse1.jpg" alt="teste">
+                    <p class="descricao_img">Imagem 1</p>
+                </div>
+                    
+                <div class="img">
+                    <img class="img_interesses" src="./imagem/interesse2.jpg" alt="teste">
+                    <p class="descricao_img">Imagem 1</p>
+                </div>
+
+                <div class="img">
+                    <img class="img_interesses" src="./imagem/eu.jpg" alt="teste">
+                    <p class="descricao_img">Imagem 1</p>
+                </div>
+               
+                <div class="img">
+                    <img class="img_interesses" src="./imagem/eu.jpg" alt="teste">
+                    <p class="descricao_img">Imagem 1</p>
+                </div> 
+            </div>
+        </section>
+
+        <section class="contato" id="secao3">
+            <form>
+                <h2 id="subtitulo2">ENTRE EM CONTATO</h2> <br><br>
+                <label for="fname"></label>
+                <input type="text" name="fname" placeholder="Nome completo"><br><br>
+                <label for="lname"></label>
+                <input type="email" name="lname" placeholder="E-mail para contato"><br><br>
+                <label for="lname"></label>
+                <textarea type="text" name="coment" placeholder="Comentários"></textarea><br><br>
+                <input id="botao_enviar" type="submit" value="Enviar">
+              </form>
+        </section>
+   
+    </main>
+    
+    <footer class="rodape">
+         <p>Copyright© 2023 - Laisa Marcelino. Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
